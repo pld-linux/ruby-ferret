@@ -1,5 +1,6 @@
-Summary:	Ferret is a high-performance, full-featured text search engine library
+Summary:	Ferret - a high-performance, full-featured text search engine library
 Summary(hu.UTF-8):	Ferret egy gyors, szolgáltatás-gazdag szövegkereső könyvtár
+Summary(pl.UTF-8):	Ferret - biblioteka wysokowydajnego silnika wyszukiwania pełnotekstowego
 Name:		ruby-ferret
 Version:	0.11.6
 Release:	0.1
@@ -21,13 +22,21 @@ library.
 %description -l hu.UTF-8
 Ferret egy gyors, szolgáltatás-gazdag szövegkereső könyvtár.
 
+%description -l pl.UTF-8
+Ferret to biblioteka wysokowydajnego, w pełni funkcjonalnego silnika
+wyszukiwania pełnotekstowego.
+
 %package rdoc
 Summary:	Documentation files for ferret library
+Summary(pl.UTF-8):	Pliki dokumentacji do biblioteki ferret
 Group:		Documentation
 Requires:	ruby >= 1:1.8.7-4
 
 %description rdoc
 Documentation files for ferret library.
+
+%description rdoc -l pl.UTF-8
+Pliki dokumentacji do biblioteki ferret.
 
 %prep
 %setup -q -n ferret-%{version}
