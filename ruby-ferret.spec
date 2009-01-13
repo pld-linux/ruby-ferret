@@ -76,7 +76,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGELOG README TODO TUTORIAL
 %attr(755,root,root) %{_bindir}/ferret-browser
-%{ruby_rubylibdir}
+%{ruby_rubylibdir}/ferret.rb
+%{ruby_rubylibdir}/ferret_version.rb
+%{ruby_rubylibdir}/ferret
+%attr(755,root,root) %{ruby_archdir}/ferret_ext.so
 
 %files rdoc
 %defattr(644,root,root,755)
