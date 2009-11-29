@@ -3,8 +3,8 @@ Summary(hu.UTF-8):	Ferret egy gyors, szolgáltatás-gazdag szövegkereső könyv
 Summary(pl.UTF-8):	Ferret - biblioteka wysokowydajnego silnika wyszukiwania pełnotekstowego
 Name:		ruby-ferret
 Version:	0.11.6
-Release:	0.1
-License:	GPL
+Release:	1
+License:	MIT
 Group:		Development/Libraries
 Source0:	http://rubyforge.org/frs/download.php/28550/ferret-%{version}.tgz
 # Source0-md5:	928b6f90c61593059d8668dc70ebf337
@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGELOG README TODO TUTORIAL
+%doc CHANGELOG README TODO TUTORIAL MIT-LICENSE
 %attr(755,root,root) %{_bindir}/ferret-browser
 %{ruby_rubylibdir}/ferret.rb
 %{ruby_rubylibdir}/ferret_version.rb
