@@ -9,6 +9,7 @@ License:	MIT
 Group:		Development/Libraries
 Source0:	http://rubyforge.org/frs/download.php/28550/%{pkgname}-%{version}.tgz
 # Source0-md5:	928b6f90c61593059d8668dc70ebf337
+Patch0:		%{name}-ruby1.9.patch
 URL:		http://rubyforge.org/projects/ferret/
 BuildRequires:	rpmbuild(macros) >= 1.484
 BuildRequires:	ruby >= 1:1.8.6
@@ -53,6 +54,7 @@ Dokumentacji w formacie ri dla %{pkgname}.
 
 %prep
 %setup -q -n ferret-%{version}
+%patch0 -p1
 
 %{__sed} -i -e 's|/usr/bin/env ruby|%{__ruby}|' bin/ferret-browser
 
