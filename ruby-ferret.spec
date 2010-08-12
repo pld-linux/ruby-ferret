@@ -13,6 +13,7 @@ Patch0:		%{name}-ruby1.9.patch
 URL:		http://rubyforge.org/projects/ferret/
 BuildRequires:	rpmbuild(macros) >= 1.484
 BuildRequires:	ruby >= 1:1.8.6
+BuildRequires:	ruby-devel >= 1:1.8.6
 BuildRequires:	ruby-modules
 %{?ruby_mod_ver_requires_eq}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
