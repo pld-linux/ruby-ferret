@@ -55,7 +55,7 @@ Dokumentacji w formacie ri dla %{pkgname}.
 
 %prep
 %setup -q -n ferret-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %{__sed} -i -e 's|/usr/bin/env ruby|%{__ruby}|' bin/ferret-browser
 
